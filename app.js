@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
-const connectDB = require("./database"); // Import the database connection function
-const booksRouter = require("./api/books/routers"); // Import the router
+const connectDB = require("./database");
+const booksRouter = require("./api/books/routers");
 require("dotenv").config();
 
 const app = express();

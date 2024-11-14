@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-//k
+
 const BookSchema = new mongoose.Schema({
   title: {
     type: String,
@@ -11,11 +11,11 @@ const BookSchema = new mongoose.Schema({
   },
   price: {
     type: Number,
-    default: 5, // Default price if not provided
+    default: 5,
   },
   image: {
     type: String,
-    default: "/media/test-image.jpg", // Default image if not provided
+    default: "/media/test-image.jpg",
   },
 });
 
