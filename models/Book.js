@@ -15,7 +15,7 @@ const BookSchema = new mongoose.Schema({
   },
   image: {
     type: String,
-    default: "default-image.jpg", // Default image if not provided
+    default: "/media/test-image.jpg", // Default image if not provided
   },
 });
 
