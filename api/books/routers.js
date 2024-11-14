@@ -13,7 +13,7 @@ const {
 router.get("/", getAllBooks);
 router.get("/:bookId", getBookById);
 router.post("/", upload.single("image"), createBook);
-router.put("/:bookId", updateBook);
+router.put("/:bookId", upload.single("image"), updateBook);
 router.delete("/:bookId", deleteBook);
 
 module.exports = router;

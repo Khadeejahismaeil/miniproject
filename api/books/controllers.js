@@ -22,6 +22,8 @@ const getBookById = async (req, res) => {
 
 // Create a new book
 const createBook = async (req, res) => {
+  console.log(req.body, req.file);
+
   try {
     if (req.file) {
       req.body.image = `${req.protocol}://${req.get("host")}/${req.file.path}`;
